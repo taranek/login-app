@@ -1,16 +1,14 @@
-import * as validation from '../../../utils/validation/validation';
-import {LoginFormFields} from "./LoginForm.types";
 import * as R from 'ramda';
-import {ValidationErrorMap, Validator} from "../../../utils/validation/validation";
 import {ValidationErrors} from "final-form";
 
+import { Validator } from "../../../utils/validation/validation";
+import * as validate from '../../../utils/validation/validation';
+import {LoginFormFields} from "./LoginForm.types";
+
+
 const fieldsValidators: Validator<LoginFormFields> = {
-    email: [validation.validEmail, validation.notEmpty],
-    password: [validation.notEmpty, validation.minimumLength(8), validation.withUppercase]
-}
-const fieldsErrors: ValidationErrorMap<LoginFormFields>= {
-    email: "Please provide a valid email.",
-    password: "A password should have more than 8 characters with at least one uppercase letter and a number"
+    email: [validate.validEmail, validate.notEmpty],
+    password: [validate.noWhiteSpace, validate.withDigit, validate.notEmpty, validate.minimumLength(8), validate.withUppercase]
 }
 
 export function validateLoginForm (values: LoginFormFields): ValidationErrors | undefined {
@@ -18,7 +16,7 @@ export function validateLoginForm (values: LoginFormFields): ValidationErrors | 
     Object.keys(values).map(field=>{
         const validators = fieldsValidators[field as keyof LoginFormFields];
         const fieldValue = values[field as keyof LoginFormFields];
-        errors = {...errors, [field]: !R.allPass(validators)(fieldValue) && fieldsErrors[field as keyof LoginFormFields]}
+        errors = {...errors, [field]: !R.allPass(validators)(fieldValue)}
     })
     return Object.keys(errors).length >0 ? errors : undefined;
 }
