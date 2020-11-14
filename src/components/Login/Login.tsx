@@ -1,8 +1,9 @@
 import * as React from 'react';
 import * as S from './Login.styles';
-import logo from '../assets/images/logo.png';
+import logo from '../../assets/images/logo.png';
 import LoginForm from "./LoginForm/LoginForm";
-const Login = () => {
+
+const Login:React.FC = () => {
     return (<S.Container>
             <S.LogoImg src={logo}/>
             <S.Title>Hello</S.Title>

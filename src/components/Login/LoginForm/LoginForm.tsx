@@ -2,50 +2,61 @@ import React from 'react';
 import {Button} from '@material-ui/core';
 import {Field, Form } from 'react-final-form';
 import * as S from './LoginForm.styles'
-import {FormFields} from "./LoginForm.types";
+import {LoginFormFields} from "./LoginForm.types";
+import {validateLoginForm} from "./validation";
 
-const LoginForm = () => {
+
+const INITIAL_VALUES:LoginFormFields = {
+    email:'',
+    password: '',
+}
+
+const LoginForm: React.FC = () => {
     return (
-        <form>
         <Form
-            onSubmit={()=>{console.log("Submitted")}}
-            render={({handleSubmit})=>(
-                <>
+            onSubmit={(values => {return validateLoginForm(values as LoginFormFields)})}
+            initialValues={INITIAL_VALUES}
+            render={({handleSubmit, submitErrors})=>(
+                <form onSubmit={handleSubmit}>
                 <Field
-                    name={'name'}
+                    name={'email'}
                     render={({input, meta})=>(
                         <S.FormInput
                             required
                             autoComplete="off"
-                            id={'name'}
+                            id={'email'}
                             value={input.value}
                             onChange={input.onChange}
-                            label="Name"
-                            error={meta.error}
+                            label={"Email"}
+                            error={Boolean(meta.submitError || meta.error)}
+                            helperText={meta.submitError || meta.error}
                             fullWidth />
                     )}
                 />
                     <Field
                         name={'password'}
-                        render={({input, meta})=>(
-                            <S.FormInput
-                                required
-                                autoComplete={"off"}
-                                id="password"
-                                type="password"
-                                value={input.value}
-                                onChange={input.onChange}
-                                label="Password"
-                                error={meta.error}
-                                fullWidth />
-                        )}
+                        render={({input, meta})=>{
+                            return (
+                                <S.FormInput
+                                    required
+                                    autoComplete={"off"}
+                                    id="password"
+                                    type="password"
+                                    value={input.value}
+                                    onChange={input.onChange}
+                                    label="Password"
+                                    error={Boolean(meta.submitError || meta.error)}
+                                    helperText={meta.submitError || meta.error}
+                                    fullWidth />
+                            )
+                        }}
                     />
-                    <Button variant="contained" size="large" color="primary" fullWidth onClick={handleSubmit} >Login</Button>
-                </>
+                    <Button type="submit" variant="contained" size="large" color="primary" fullWidth >Login</Button>
+                </form>
 
             )}
         />
-    </form>
+
 
     );
 };
