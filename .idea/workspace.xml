@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b991c884-acda-4458-8439-b568f1f78933" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/validation/__specs__/validation.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/LoginForm/LoginForm.styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/LoginForm/LoginForm.styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/LoginForm/validation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/LoginForm/validation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/validation/validation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/validation/validation.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +36,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/assets/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../d8f96fcf-1c7b-4408-b5fe-24a3c067c8ea" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -68,7 +73,7 @@
       <workItem from="1604848705263" duration="3384000" />
       <workItem from="1604953123240" duration="658000" />
       <workItem from="1605122554852" duration="23329000" />
-      <workItem from="1605361627652" duration="13337000" />
+      <workItem from="1605361627652" duration="18422000" />
     </task>
     <servers />
   </component>
