@@ -1,26 +1,33 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import { IntlProvider } from "react-intl";
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
+    BrowserRouter as Router,
+    Switch,
+    Route,
     Redirect,
 } from "react-router-dom";
-import Layout from './components/shared/Layout/Layout';
+
+import "./App.css";
+import Layout from "./components/shared/Layout/Layout";
 import Login from "./components/Login/Login";
+import { en } from "./translations/index";
+
 
 function App() {
+    console.log(en)
   return (
+    <IntlProvider messages={en} locale="en" defaultLocale="en">
       <Layout>
-      <Router>
-        <Switch>
+        <Router>
+          <Switch>
             <Route path="/login">
-                <Login />
+              <Login />
             </Route>
-            <Redirect to={"/login"}/>
-        </Switch>
-      </Router>
+            <Redirect to={"/login"} />
+          </Switch>
+        </Router>
       </Layout>
+    </IntlProvider>
   );
 }
 

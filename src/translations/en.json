@@ -1,0 +1,12 @@
+{
+  "GLOBAL.EMAIL": "Email",
+  "GLOBAL.PASSWORD": "Password",
+
+  "LOGIN.WELCOME-MESSAGE": "Welcome to the demo app!",
+  "LOGIN.PLEASE-LOGIN": "Please log in with credentials: ....",
+  "LOGIN.LOGIN-ACTION": "Login",
+
+  "LOGIN.ERRORS.EMAIL": "Please provide a valid email.",
+  "LOGIN.ERRORS.PASSWORD": "Password should contain at least 8 letters, a digit and at least 1 uppercase letter.",
+  "LOGIN.ERRORS.SUBMIT": "Failed to log in"
+}
