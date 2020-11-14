@@ -10,10 +10,10 @@ const fieldsValidators: Validator<LoginFormFields> = {
 }
 const fieldsErrors: ValidationErrorMap<LoginFormFields>= {
     email: "Please provide a valid email.",
-    password: "A password should contain at least one uppercase letter and a number."
+    password: "A password should have more than 8 characters with at least one uppercase letter and a number"
 }
 
-export async function validateLoginForm (values: LoginFormFields): Promise<ValidationErrors | undefined> {
+export function validateLoginForm (values: LoginFormFields): ValidationErrors | undefined {
     let errors = {};
     Object.keys(values).map(field=>{
         const validators = fieldsValidators[field as keyof LoginFormFields];
