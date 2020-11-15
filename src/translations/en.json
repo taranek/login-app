@@ -1,6 +1,8 @@
 {
   "GLOBAL.EMAIL": "Email",
   "GLOBAL.PASSWORD": "Password",
+  "GLOBAL.USERS": "Users",
+  "GLOBAL.NAME": "Name",
 
   "LOGIN.WELCOME-MESSAGE": "Welcome to the demo app!",
   "LOGIN.PLEASE-LOGIN": "Please log in with credentials:",

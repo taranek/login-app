@@ -19,4 +19,6 @@ export const UserInfo = styled.div`
   border: 1px solid #86bff2;
   background: #e9dcff;
   border-radius: 5px;
+  text-align: left;
+  white-space: nowrap;
 `
