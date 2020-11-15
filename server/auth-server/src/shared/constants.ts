@@ -15,6 +15,7 @@ export const cookieProps = Object.freeze({
     key: 'ExpressGeneratorTs',
     secret: process.env.COOKIE_SECRET,
     options: {
+        sameSite: "none",
         httpOnly: true,
         signed: true,
         path: (process.env.COOKIE_PATH),

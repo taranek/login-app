@@ -1,5 +1,5 @@
 import bcrypt from 'bcrypt';
-import { Request, Response, Router } from 'express';
+import {CookieOptions, Request, Response, Router} from 'express';
 import StatusCodes from 'http-status-codes';
 
 import UserDao from '@daos/User/UserDao.mock';
@@ -45,7 +45,7 @@ router.post('/login', async (req: IRequest, res: Response) => {
         role: user.role,
     });
     const { key, options } = cookieProps;
-    res.cookie(key, jwt, options);
+    res.cookie(key, jwt, options as CookieOptions); 
     // Return
     return res.status(OK).end();
 });
