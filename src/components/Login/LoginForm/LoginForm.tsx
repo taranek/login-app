@@ -5,6 +5,7 @@ import * as S from "./LoginForm.styles";
 import { LoginFormFields } from "./LoginForm.types";
 import { validateLoginForm } from "./validation";
 import { useIntl } from "react-intl";
+import { loginUser } from "../../../api/auth-server/AuthApi";
 
 const INITIAL_VALUES: LoginFormFields = {
   email: "",
@@ -13,11 +14,16 @@ const INITIAL_VALUES: LoginFormFields = {
 
 const LoginForm: React.FC = () => {
   const intl = useIntl();
+  const handleSubmit = React.useCallback( async(values: LoginFormFields)=>{
+      console.log(values)
+      const errors = validateLoginForm(values as LoginFormFields);
+      console.log(errors)
+      if(!!errors) return errors;
+      await loginUser(values);
+  },[])
   return (
     <Form
-      onSubmit={(values) => {
-        return validateLoginForm(values as LoginFormFields);
-      }}
+      onSubmit={async (values) => await handleSubmit(values as LoginFormFields)}
       initialValues={INITIAL_VALUES}
       render={({ handleSubmit }) => (
         <form onSubmit={handleSubmit}>

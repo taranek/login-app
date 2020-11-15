@@ -13,6 +13,8 @@ const Login: React.FC = () => {
         <Icon src={key} />
       </S.MainImgWrapper>
       <S.Title>{intl.formatMessage({ id: "LOGIN.WELCOME-MESSAGE" })}</S.Title>
+        <span>sean.maxwell@gmail.com</span>
+        <span>Password@1</span>
       <FormattedMessage id={"LOGIN.PLEASE-LOGIN"} />
       <S.FormContainer>
         <LoginForm />
