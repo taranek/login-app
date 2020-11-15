@@ -13,7 +13,7 @@ const InitialState: UsersState = {
 export default function usersReducer(
   state = InitialState,
   action: { type: string; payload: UserInfo[] }
-) {
+):UsersState {
   switch (action.type) {
     case actionTypes.FETCH_ALL_REQUEST: {
       return {
@@ -22,7 +22,6 @@ export default function usersReducer(
       };
     }
     case actionTypes.FETCH_ALL_SUCCESS: {
-      console.log('Success with',action.payload)
       return {
         ...state,
         users: action.payload,

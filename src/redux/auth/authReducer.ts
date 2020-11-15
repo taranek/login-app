@@ -10,7 +10,7 @@ const InitialState: AuthState = {
     loading: false
 }
 
-export default function authReducer(state=InitialState, action: Action<string>){
+export default function authReducer(state=InitialState, action: Action<string>):AuthState{
     switch (action.type) {
         case actionTypes.LOGIN_REQUEST:{
             return {
