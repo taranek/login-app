@@ -5,7 +5,10 @@ export type AuthRequest = {
 export type UserInfo = {
     name: string;
     email: string;
+    id: number;
     pwdHash?: string;
     role?: number;
-    id: number;
+}
+export type AuthCheckResponse = {
+    loggedIn: boolean;
 }
