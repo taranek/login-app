@@ -11,6 +11,11 @@ const LOGGED_IN_INITIAL: AuthState = {
   loading: false,
 };
 
+const PAYLOAD = {
+  email: "",
+  password: "",
+};
+
 describe("Auth reducer", () => {
   it(`sets the loading state when starting the logout`, () => {
     expect(
@@ -19,7 +24,7 @@ describe("Auth reducer", () => {
   });
   it(`sets the loading state when starting the login`, () => {
     expect(
-      authReducer(LOGGED_IN_INITIAL, actions.loginRequest()).loading
+      authReducer(LOGGED_IN_INITIAL, actions.loginRequest(PAYLOAD)).loading
     ).toBeTruthy();
   });
   it(`sets isLoggedFlag to true if login is successful`, () => {

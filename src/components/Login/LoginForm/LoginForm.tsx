@@ -37,6 +37,7 @@ const LoginForm: React.FC = () => {
                 value={input.value}
                 onChange={input.onChange}
                 label={intl.formatMessage({ id: "GLOBAL.EMAIL" })}
+                placeholder={intl.formatMessage({ id: "GLOBAL.EMAIL" })}
                 error={Boolean(meta.submitError || meta.error)}
                 helperText={
                   (meta.submitError || meta.error) &&
@@ -58,6 +59,7 @@ const LoginForm: React.FC = () => {
                   value={input.value}
                   onChange={input.onChange}
                   label={intl.formatMessage({ id: "GLOBAL.PASSWORD" })}
+                  placeholder={intl.formatMessage({ id: "GLOBAL.PASSWORD" })}
                   error={Boolean(meta.submitError || meta.error)}
                   helperText={
                     (meta.submitError || meta.error) &&
@@ -70,6 +72,7 @@ const LoginForm: React.FC = () => {
           />
           <Button
             type="submit"
+            className={"login-submit"}
             variant="contained"
             size="large"
             color="primary"

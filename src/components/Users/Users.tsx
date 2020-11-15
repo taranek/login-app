@@ -29,7 +29,7 @@ const Users: React.FC = () => {
       <h2>{intl.formatMessage({ id: "GLOBAL.USERS" })}</h2>
       {users.map((x) => (
         <S.UserInfo key={x.id}>
-          <b>{intl.formatMessage({ id: "GLOBAL.NAME" })}</b>: {x.name}
+          <b>{intl.formatMessage({ id: "GLOBAL.NAME" })}:</b> {x.name}
         </S.UserInfo>
       ))}
       <S.UsersFooter>

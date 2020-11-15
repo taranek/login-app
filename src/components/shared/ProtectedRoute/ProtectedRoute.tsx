@@ -1,6 +1,6 @@
 import React from "react";
 import { isLoggedIn } from "api/auth-server/AuthApi";
-import { Route, Redirect, useHistory } from "react-router-dom";
+import { Route, useHistory } from "react-router-dom";
 
 export type Props = {
   fallback: string;

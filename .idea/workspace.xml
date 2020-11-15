@@ -5,18 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b991c884-acda-4458-8439-b568f1f78933" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/redux/auth/__specs__/authReducer.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/auth/authSaga.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/users/__specs__/usersReducer.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/users/usersSaga.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Login/__specs__/Login.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Users/__specs__/Users.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shared/ProtectedRoute/__specs__/ProtectedRoute.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/auth-server/AuthApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/auth-server/AuthApi.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/auth-server/UsersApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/auth-server/UsersApi.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/auth-server/model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/auth-server/model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/auth/authReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/auth/authReducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/rootSaga.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/rootSaga.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/users/usersReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users/usersReducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/validation/__specs__/validation.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/validation/__specs__/validation.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/LoginForm/LoginForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/LoginForm/LoginForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/ProtectedRoute/ProtectedRoute.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/ProtectedRoute/ProtectedRoute.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/auth/__specs__/authReducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/auth/__specs__/authReducer.test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>

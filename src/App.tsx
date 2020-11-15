@@ -20,8 +20,8 @@ import rootSaga from "redux/rootSaga";
 import "./App.css";
 
 const sagaMiddleware = createSagaMiddleware();
-const rootReducer = combineReducers({ users, auth });
-const store = createStore(rootReducer, applyMiddleware(sagaMiddleware));
+export const rootReducer = combineReducers({ users, auth });
+export const store = createStore(rootReducer, applyMiddleware(sagaMiddleware));
 sagaMiddleware.run(rootSaga);
 
 function App() {
