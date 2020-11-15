@@ -1,4 +1,3 @@
-import React from 'react';
 import * as validation from '../validation';
 
 type TestDataSet = {name: string,data: any; expected: any}[];
