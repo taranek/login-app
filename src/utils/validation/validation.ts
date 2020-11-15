@@ -4,7 +4,7 @@ import * as EmailValidator from 'email-validator';
 
 const REGEX_ONE_UPPERCASE = /(?=[A-Z])/;
 const REGEX_NO_WHITESPACE = /[^\s]/;
-const REGEX_WITH_DIGIT = /[0-9]/gm;
+const REGEX_WITH_DIGIT = /[0-9]/;
 
 
 export type ValidationPredicate = (...args: any[]) => boolean;

@@ -16,7 +16,12 @@ export function validateLoginForm (values: LoginFormFields): ValidationErrors | 
     Object.keys(values).map(field=>{
         const validators = fieldsValidators[field as keyof LoginFormFields];
         const fieldValue = values[field as keyof LoginFormFields];
-        errors = {...errors, [field]: !R.allPass(validators)(fieldValue)}
+        const isFieldValid = R.allPass(validators)(fieldValue);
+
+        if(!isFieldValid){
+            errors = {...errors, [field]: true}
+        }
+
     })
     return Object.keys(errors).length >0 ? errors : undefined;
 }

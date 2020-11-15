@@ -14,7 +14,6 @@ import { en } from "./translations/index";
 
 
 function App() {
-    console.log(en)
   return (
     <IntlProvider messages={en} locale="en" defaultLocale="en">
       <Layout>

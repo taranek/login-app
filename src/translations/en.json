@@ -3,7 +3,7 @@
   "GLOBAL.PASSWORD": "Password",
 
   "LOGIN.WELCOME-MESSAGE": "Welcome to the demo app!",
-  "LOGIN.PLEASE-LOGIN": "Please log in with credentials: ....",
+  "LOGIN.PLEASE-LOGIN": "Please log in with credentials:",
   "LOGIN.LOGIN-ACTION": "Login",
 
   "LOGIN.ERRORS.EMAIL": "Please provide a valid email.",
