@@ -9,7 +9,7 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
-import ProtectedRoute from './components/shared/ProtectedRoute/ProtectedRoute'
+import ProtectedRoute from "./components/shared/ProtectedRoute/ProtectedRoute";
 import { default as users } from "./redux/users/usersReducer";
 import { default as auth } from "./redux/auth/authReducer";
 import Layout from "./components/shared/Layout/Layout";
@@ -17,14 +17,12 @@ import Login from "./components/Login/Login";
 import Users from "./components/Users/Users";
 import { en } from "./translations/index";
 import rootSaga from "redux/rootSaga";
-import './App.css'
-
+import "./App.css";
 
 const sagaMiddleware = createSagaMiddleware();
 const rootReducer = combineReducers({ users, auth });
 const store = createStore(rootReducer, applyMiddleware(sagaMiddleware));
 sagaMiddleware.run(rootSaga);
-
 
 function App() {
   return (
@@ -36,9 +34,12 @@ function App() {
               <Route path="/login">
                 <Login />
               </Route>
-              <ProtectedRoute fallback={'/login'} targetRoute={'/users'} >
-                <Users />
-              </ProtectedRoute>
+              <Route path="/users">
+                <ProtectedRoute fallback={"/login"} targetRoute={"/users"}>
+                  <Users />
+                </ProtectedRoute>
+              </Route>
+              <Redirect to="/login" />
             </Switch>
           </Layout>
         </Provider>

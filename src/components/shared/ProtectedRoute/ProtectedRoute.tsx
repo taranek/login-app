@@ -32,7 +32,7 @@ const ProtectedRoute: React.FC<Props> = ({
     window.location.reload(false);
   }
   return isLogged && !loading ? (
-    <Route path={targetRoute} exact>{children}</Route>
+    <Route path={targetRoute}>{children}</Route>
   ) : (
     <Route path={fallback} />
   );
