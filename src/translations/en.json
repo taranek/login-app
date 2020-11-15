@@ -5,6 +5,7 @@
   "LOGIN.WELCOME-MESSAGE": "Welcome to the demo app!",
   "LOGIN.PLEASE-LOGIN": "Please log in with credentials:",
   "LOGIN.LOGIN-ACTION": "Login",
+  "LOGIN.LOGOUT-ACTION": "Logout",
 
   "LOGIN.ERRORS.EMAIL": "Please provide a valid email.",
   "LOGIN.ERRORS.PASSWORD": "Password should contain at least 8 letters, a digit and at least 1 uppercase letter.",

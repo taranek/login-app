@@ -6,7 +6,7 @@ export const LayoutContainer = styled.div`
   display: flex;
   justify-content: center;
   color: #282c34;
-  
+  min-height: 100vh;
   h1 {
     font-size: 40px;
     margin-bottom: 25px
@@ -23,8 +23,17 @@ export const LayoutContainer = styled.div`
 `;
 
 export const LayoutInner = styled.div`
-  min-height: 100vh;
   ${media.lessThan("large")`
     width: 100%;
   `}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5vh 5vw;
+  min-height: 80vh;
+  padding: 5vh 5vw;
+  flex-direction: column;
+  background: #d9dcff;
+  border-radius: 10px;
 `;

@@ -1,12 +1,22 @@
 import * as React from "react";
 import * as S from "./Login.styles";
-import key from "../../assets/icons/key.svg";
+import key from "assets/icons/key.svg";
 import LoginForm from "./LoginForm/LoginForm";
 import { FormattedMessage, useIntl } from "react-intl";
+import { useHistory } from "react-router-dom";
+
 import Icon from "../shared/Icon/Icon";
+import {UserInfo} from "../../api/auth-server/model";
+import {useSelector} from "react-redux";
+import {AppState} from "../../App";
 
 const Login: React.FC = () => {
   const intl = useIntl();
+  const history = useHistory();
+  const loggedIn= useSelector((state:AppState) => state.auth.loggedIn)
+    if(loggedIn){
+        history.push('/users')
+    }
   return (
     <S.Container>
       <S.MainImgWrapper>

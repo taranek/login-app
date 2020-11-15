@@ -1,11 +1,12 @@
 import React from "react";
 import { Button } from "@material-ui/core";
+import {useDispatch} from 'react-redux';
 import { Field, Form } from "react-final-form";
 import * as S from "./LoginForm.styles";
 import { LoginFormFields } from "./LoginForm.types";
 import { validateLoginForm } from "./validation";
 import { useIntl } from "react-intl";
-import { loginUser } from "../../../api/auth-server/AuthApi";
+import {loginRequest} from 'redux/auth/actions'
 
 const INITIAL_VALUES: LoginFormFields = {
   email: "",
@@ -14,11 +15,12 @@ const INITIAL_VALUES: LoginFormFields = {
 
 const LoginForm: React.FC = () => {
   const intl = useIntl();
-  const handleSubmit = React.useCallback( async(values: LoginFormFields)=>{
+  const dispatch = useDispatch();
+  const handleSubmit = React.useCallback( (values: LoginFormFields)=>{
       const errors = validateLoginForm(values as LoginFormFields);
       if(!!errors) return errors;
-      await loginUser(values);
-  },[])
+      dispatch(loginRequest(values));
+  },[dispatch])
   return (
     <Form
       onSubmit={async (values : LoginFormFields) => await handleSubmit(values)}

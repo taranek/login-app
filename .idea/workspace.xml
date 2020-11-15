@@ -5,15 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b991c884-acda-4458-8439-b568f1f78933" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/auth-server/UsersApi.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Users/Users.styles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Users/Users.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shared/ProtectedRoute/ProtectedRoute.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/auth/actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/auth/authReducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/rootSaga.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/users/actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/users/usersReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/auth-server/AuthApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/auth-server/AuthApi.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/auth-server/UsersApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/auth-server/UsersApi.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/auth-server/model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/auth-server/model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/key.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/key.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.styles.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Login/LoginForm/LoginForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/LoginForm/LoginForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/Layout/Layout.styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Layout/Layout.styles.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/translations/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/translations/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +77,8 @@
       <recent name="D:\my-app\src\components\assets\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\my-app\src\components\shared\ProtectedRoute" />
+      <recent name="D:\my-app\src\redux\users" />
       <recent name="D:\my-app\src" />
       <recent name="D:\my-app\src\assets\icons" />
       <recent name="D:\my-app\src\components\shared\Layout" />
