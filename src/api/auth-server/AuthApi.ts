@@ -7,7 +7,7 @@ export const loginUser = async (request: AuthRequest) => {
         'Content-Type':'application/json',
         },withCredentials: true})
     console.log(axiosResponse)*/
-    const response = await fetch(new Request("http://localhost:3001/api/auth/login", {
+    const response = await fetch(new Request("https://taranek-login-service.herokuapp.com/api/auth/login", {
         method: "POST",
         headers: {
             "Accept":'application/json',
@@ -15,7 +15,6 @@ export const loginUser = async (request: AuthRequest) => {
             "Access-Control-Allow-Credentials": "true",
             "Cache":'no-cache'
         },
-        mode: "cors",
         credentials: 'include',
         body: JSON.stringify(request)
     }))
