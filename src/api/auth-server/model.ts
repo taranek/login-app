@@ -1,3 +1,4 @@
+// THIS FILE SHOULD BE GENERATED AUTOMATICALLY BY TOOLS LIKE OPEN-API CLI
 export type AuthRequest = {
     email: string;
     password: string;

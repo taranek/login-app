@@ -1,3 +1,4 @@
+// THIS FILE SHOULD BE GENERATED AUTOMATICALLY BY TOOLS LIKE OPEN-API CLI
 import {AuthCheckResponse, AuthRequest, UserInfo} from "./model";
 
 export const loginUser = async (request: AuthRequest) => {
