@@ -13,9 +13,9 @@ const Login: React.FC = () => {
         <Icon src={key} />
       </S.MainImgWrapper>
       <S.Title>{intl.formatMessage({ id: "LOGIN.WELCOME-MESSAGE" })}</S.Title>
-        <span>sean.maxwell@gmail.com</span>
-        <span>Password@1</span>
-      <FormattedMessage id={"LOGIN.PLEASE-LOGIN"} />
+        <strong><FormattedMessage id={"LOGIN.PLEASE-LOGIN"} /></strong>
+        <span>{process.env.REACT_APP_ADMIN_MAIL}</span>
+        <span>{process.env.REACT_APP_ADMIN_PASSWORD}</span>
       <S.FormContainer>
         <LoginForm />
       </S.FormContainer>

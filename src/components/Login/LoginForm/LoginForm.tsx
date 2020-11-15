@@ -15,15 +15,13 @@ const INITIAL_VALUES: LoginFormFields = {
 const LoginForm: React.FC = () => {
   const intl = useIntl();
   const handleSubmit = React.useCallback( async(values: LoginFormFields)=>{
-      console.log(values)
       const errors = validateLoginForm(values as LoginFormFields);
-      console.log(errors)
       if(!!errors) return errors;
       await loginUser(values);
   },[])
   return (
     <Form
-      onSubmit={async (values) => await handleSubmit(values as LoginFormFields)}
+      onSubmit={async (values : LoginFormFields) => await handleSubmit(values)}
       initialValues={INITIAL_VALUES}
       render={({ handleSubmit }) => (
         <form onSubmit={handleSubmit}>
