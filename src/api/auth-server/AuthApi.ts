@@ -15,6 +15,7 @@ export const loginUser = async (request: AuthRequest) => {
             "Access-Control-Allow-Credentials": "true",
             "Cache":'no-cache'
         },
+        mode:"cors",
         credentials: 'include',
         body: JSON.stringify(request)
     }))

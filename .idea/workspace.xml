@@ -5,69 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b991c884-acda-4458-8439-b568f1f78933" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/build.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/dist/Server.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/dist/daos/MockDb/MockDao.mock.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/dist/daos/User/UserDao.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/dist/daos/User/UserDao.mock.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/dist/entities/User.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/dist/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/dist/preStart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/dist/public/scripts/http.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/dist/public/scripts/login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/dist/public/scripts/users.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/dist/public/stylesheets/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/dist/public/stylesheets/users.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/dist/routes/Auth.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/dist/routes/Users.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/dist/routes/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/dist/routes/middleware.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/dist/shared/JwtService.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/dist/shared/Logger.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/dist/shared/constants.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/dist/shared/functions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/dist/views/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/dist/views/users.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/env/development.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/env/production.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/env/test.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/jet-logger.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/spec/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/spec/nodemon.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/spec/support/LoginAgent.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/spec/support/jasmine.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/spec/support/types.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/spec/tests/Auth.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/spec/tests/Users.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/src/Server.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/src/daos/MockDb/MockDao.mock.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/src/daos/MockDb/MockDb.backup.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/src/daos/MockDb/MockDb.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/src/daos/User/UserDao.mock.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/src/daos/User/UserDao.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/src/entities/User.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/src/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/src/preStart.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/src/public/scripts/http.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/src/public/scripts/login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/src/public/scripts/users.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/src/public/stylesheets/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/src/public/stylesheets/users.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/src/routes/Auth.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/src/routes/Users.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/src/routes/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/src/routes/middleware.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/src/shared/JwtService.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/src/shared/Logger.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/src/shared/constants.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/src/shared/functions.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/src/views/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/src/views/users.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/tsconfig.prod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/yarn.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/auth-server/AuthApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/auth-server/AuthApi.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -138,7 +75,7 @@
       <workItem from="1605122554852" duration="23329000" />
       <workItem from="1605361627652" duration="19297000" />
       <workItem from="1605388120548" duration="9176000" />
-      <workItem from="1605437898851" duration="9123000" />
+      <workItem from="1605437898851" duration="9470000" />
     </task>
     <servers />
   </component>
