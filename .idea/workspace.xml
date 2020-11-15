@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b991c884-acda-4458-8439-b568f1f78933" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/key.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/Icon/Icon.styles.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/Icon/Icon.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/auth-server/src/daos/MockDb/MockDb.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/auth-server/src/daos/MockDb/MockDb.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shared/Layout/Layout.styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Layout/Layout.styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +57,8 @@
       <recent name="D:\my-app\src\components\assets\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\my-app\src\assets\icons" />
       <recent name="D:\my-app\src" />
+      <recent name="D:\my-app\src\assets\icons" />
       <recent name="D:\my-app\src\components\shared\Layout" />
     </key>
   </component>
@@ -79,7 +76,8 @@
       <workItem from="1604953123240" duration="658000" />
       <workItem from="1605122554852" duration="23329000" />
       <workItem from="1605361627652" duration="19297000" />
-      <workItem from="1605388120548" duration="7324000" />
+      <workItem from="1605388120548" duration="9176000" />
+      <workItem from="1605437898851" duration="6169000" />
     </task>
     <servers />
   </component>
