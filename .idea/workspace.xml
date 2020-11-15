@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b991c884-acda-4458-8439-b568f1f78933" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
-    </list>
+    <list default="true" id="b991c884-acda-4458-8439-b568f1f78933" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +73,7 @@
       <workItem from="1605122554852" duration="23329000" />
       <workItem from="1605361627652" duration="19297000" />
       <workItem from="1605388120548" duration="9176000" />
-      <workItem from="1605437898851" duration="6518000" />
+      <workItem from="1605437898851" duration="7121000" />
     </task>
     <servers />
   </component>
